@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get started</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .tool
+        {
+            display: flex;
+           background-image: linear-gradient(20deg,rgb(35, 35, 36),rgb(0, 0, 0));
+            width: 100vw;
+            height: 12vh;
+            align-items: center;
+            position: static;
+           
+        }
+       
+
+        .tool ul{
+            list-style:none ;
+            display: block;
+            
+        }
+        .tool ul li{
+            display: inline-block;
+            width: auto;
+            height: 4vh;
+            padding: calc(0.5vh + 0.5vw);
+            font-size: calc(1.5vh + 1.5vw);
+            color: rgb(0, 0, 0);
+           
+            margin: 0px 2px;
+
+        }
+
+        .tool ul a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .tool ul li:hover {
+            scale: 1.3;
+            border-bottom:1px outset red;
+        }
+        
+        
+        #a0{
+            width: 3vh;
+            height: 3vh;
+            border-radius: 50%;
+            background-image: url("logo.png");
+            background-size: cover;
+            background-position: center;
+            
+        }
+        
+       
+     
+    </style>
+    <style>
+        #pro{
+            width: calc(25vh + 25vw);
+            display: block;
+            height: auto;
+            background-image: linear-gradient(40deg, rgba(0, 0, 255, 0.412),purple);
+            box-shadow: 5px 5px 10px lightblue;
+            border-radius: 10%;
+            position: absolute;
+            margin: calc(2vw + 2vh) 25vw;
+        }
+        .im{
+            width: calc(6vh + 6vw);
+            height: calc(6vh + 6vw);
+           
+            border-radius: 50%;
+            border: 5px hidden black, 10px solid white;
+            margin: 2vh auto;
+            background-image: url("adult.jpg");
+            background-size:cover;
+
+        }
+        .level{
+               width: 8ch;
+               height: auto;
+               margin: auto;
+               font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+               text-align: center;
+               color: gold;
+        }
+        .sec{
+            color: white;
+            width: 80%;
+            margin:4vh auto;
+            text-align: justify;
+            font-size: small;
+        }
+    </style>
+    
+    <style>
+        .cl{
+            width: calc(12vh + 12vw);
+            height: calc(12vh + 12vw);
+            background-color: aliceblue;
+            display: inline-block;
+            margin: 2vh 3vw;
+        }
+        #cls{
+           height: auto;
+           position: absolute;
+           display: none;
+           margin:0 4vh;
+          color: rgb(241, 253, 0);
+        }
+        #cls p{
+            background-image: linear-gradient(30deg,purple,gray);
+            width: 10ch;
+            text-align: center;
+            border-radius: 40%;
+        }
+    </style>
+
+    <style>
+        #co{
+            display: none;
+            position: absolute;
+            width: calc(25vh + 25vw);
+            margin: 5vh 25%;
+            background-image: linear-gradient(20deg,blue,rgb(0, 122, 128),black);
+           padding-top: 2vh;
+           padding-bottom: 2vh;
+        }
+        #co .im{
+            width: calc(6vh + 6vw);
+            height: calc(6vh + 6vw);
+           
+            border-radius: 50%;
+            border: 5px hidden black, 10px solid white;
+            margin: 2vh auto;
+            background-image: url("co.jpg");
+            background-size:cover;
+
+        }
+        #co .med{
+            display: inline-block;
+            height: calc(3vh + 3vw);
+            width: calc(3vh + 3vw);
+            border-radius: 50%;
+            margin: 5vh 1vw;
+        }
+
+        #co .med img{
+            height: calc(3vh + 3vw);
+            width: calc(3vh + 3vw);
+            border-radius: 50%;
+            margin: 0vh 100%;
+        }
+    </style>
+
+    <style>
+        #c1{
+            background-image: url("kl.webp");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #c2{
+            background-image: url("el.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #c3{
+            background-image: url("hl.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #q1{
+            background-image: url("kq.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #q2{
+            background-image: url("eq.webp");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #q3{
+            background-image: url("hq.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #b1{
+            background-image: url("kb.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #b2{
+            background-image: url("eb.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #b3{
+            background-image: url("hb.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #g1{
+            background-image: url("kg.webp");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #g2{
+            background-image: url("eg.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #g3{
+            background-image: url("hg.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+<body selectable="false">
+    
+    <div class="tool">
+        <ul>
+            <li id="a0"></li>
+            <li id="a1"><a href="#" onclick="profile();">Profile</a></li>
+            <li id="a2"><a href="#" onclick="clas();">Classes</a></li>
+            
+            <li id="a3"><a href="#" onclick="con();">Contact</a></li>
+        </ul>
+    </div>
+   
+    <div id="pro">
+        <div class="im"></div>
+        <div class="level">LEVEL 1</div>
+        <div class="sec">Name: Vinayak <br><br> Email: xyz123@gmail.com <br><br>Mobile: 1234567890</div>
+        <div class="med"></div>
+    </div>
+    
+    <div id="cls">
+       <p>Classes</p>
+        <div id="c1" class="cl"></div>
+        <div id="c2" class="cl"></div>
+        <div id="c3" class="cl"></div>
+        <br>
+        <p>Books</p>
+        <div id="b1" class="cl"></div>
+        <div id="b2" class="cl"></div>
+        <div id="b3" class="cl"></div>
+        <p>Quizz</p>
+        <div id="q1" class="cl"></div>
+        <div id="q2" class="cl"></div>
+        <div id="q3" class="cl"></div><br>
+        <p>Games</p>
+        <div id="g1" class="cl"></div>
+        <div id="g2" class="cl"></div>
+        <div id="g3" class="cl"></div>
+    </div>
+    
+
+    <div id="co">
+        <div class="im"></div>
+       
+        <div class="med"><img src="instalogo.png" alt="inst"></div>
+        <div class="med"><img src="maillogo.png" alt="email"></div>
+        <div class="med"><img src="linklogo.png" alt="link"></div>
+        <div class="med"><img src="telelogo.jpeg" alt="phone"></div>
+    </div>
+    
+    <script>
+        var p=1;
+        var cl=0;
+        
+  function profile(){
+    po= document.getElementById("pro");
+    po.style.display = "block";
+
+    cls= document.getElementById("cls");
+    cls.style.display= "none";
+
+    co= document.getElementById("co");
+    co.style.display= "none";
+  }
+  function clas(){
+    po= document.getElementById("pro");
+    po.style.display = "none";
+
+    cls= document.getElementById("cls");
+    cls.style.display= "block";
+
+    co= document.getElementById("co");
+    co.style.display= "none";
+  }
+  function con(){
+    po= document.getElementById("pro");
+    po.style.display = "none";
+
+    cls= document.getElementById("cls");
+    cls.style.display= "none";
+
+    co= document.getElementById("co");
+    co.style.display= "block";
+  }
+
+
+    </script>
+</body>
+</html>

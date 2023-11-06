@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .tool
+        {
+            display: flex;
+           background-image: linear-gradient(20deg,rgb(35, 35, 36),rgb(0, 0, 0));
+            width: 100vw;
+            height: 12vh;
+            align-items: center;
+            position: static;
+           
+        }
+       
+
+        .tool ul{
+            list-style:none ;
+            display: block;
+            
+        }
+        .tool ul li{
+            display: inline-block;
+            width: auto;
+            height: 4vh;
+            padding: calc(0.5vh + 0.5vw);
+            font-size: calc(1.5vh + 1.5vw);
+            color: rgb(0, 0, 0);
+           
+            margin: 0px 2px;
+
+        }
+
+        .tool ul a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .tool ul li:hover {
+            scale: 1.3;
+           
+        }
+        
+        
+        #a0{
+            width: 3vh;
+            height: 3vh;
+            border-radius: 50%;
+            background-image: url("logo.png");
+            background-size: cover;
+            background-position: center;
+            
+        }
+        #a1{
+            border-bottom:1px outset red;
+        }
+        form{
+            width: 45vw;
+            margin:80vh 25vw;
+            position: absolute;
+           background-image: radial-gradient(rgb(24, 24, 27),black,purple);
+            height: auto;
+            border-radius: 10%;
+           /* padding-top: 5vh;
+           padding-bottom: 5vh; */
+         
+            
+        }
+
+      
+
+        .sign{
+            background-color: rgba(6, 234, 255, 0.392);
+            
+            width: 30vw;
+            margin:1.5vh auto;
+            height: auto;
+            padding: calc(2vh + 2vw);
+          border-radius: 10%;
+          font-size: calc(1vh + 1vw);
+          color: #ffffff;
+            
+        }
+        .sign input{
+            border-radius: 10%;
+            width: 20vw;
+            height: 3.5vh;
+            margin-bottom:1vh ;
+            font-size: calc(1vh + 1vw);
+            color: rgb(72, 0, 255);
+            background-color: antiquewhite;
+        }
+        #si4{
+            width: 4ch;
+            margin: 0 auto;
+        }
+
+
+        #lan input{
+           width: 2vw;
+           margin:0.5vh ;
+        }
+        #lan label{
+            color: #eafb03;
+            cursor: pointer;
+        }
+
+        #lan label:hover::before{
+            color: rgb(0, 0, 0);
+        }
+
+        #lan label:hover::after{
+            color: red;
+        }
+        
+        .end input{
+            width:10vw ;
+            height: 5vh;
+            margin-right: 1vw;
+           cursor: pointer;
+           color: red;
+        }
+        .end input:hover{
+            scale: 1.2;
+        }
+       
+      .slideshow{
+       height: 80%;
+       width: 100%;
+       display: flex;
+       margin: 5% auto 0;
+       box-sizing: border-box;
+    
+      }
+      .slide{
+        margin: 0 1%;
+        flex-grow: 1;
+        flex-basis: 0;
+        transition: 0.5s;
+       
+      }
+      .slide img{
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       transition: 0.5s;
+      }
+
+      .slide:hover{
+        flex-basis: 50%;
+      }
+    
+    </style>
+</head>
+<body selectable="false">
+    
+    <div class="tool">
+        <ul>
+            <li id="a0"></li>
+            <li id="a1"><a href="index.html" >Home</a></li>
+            <li id="a2"><a href="class.html">Classes</a></li>
+            <li id="a3"><a href="profile.html">Profile</a></li>
+            <li id="a4"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="slideshow">
+       <div class="slide active"><img src="lan1.jpg" alt="Image 1"></div> 
+       <div class="slide"> <img src="lan2.png" alt="Image 2"></div> 
+       <div class="slide"><img src="lan3.webp" alt="Image 3"></div> 
+      </div>
+     <!-- <form action="https://sheetdb.io/api/v1/cvqh96ihuokyb" method="post"> -->
+        <form >
+    <div class="sign" >
+        <div><label for="si1">Name</label>
+            
+            
+            
+            <br>
+            <input type="text" name="name" id="si1" placeholder="username" value=""  required >
+            <br>
+            <label for="si2" >Email</label>
+            <br>
+            <input type="email" name="email" id="si2" placeholder="random@xyz" required>
+            <br>
+            <label for="si3" >Phone</label>
+            <br>
+            <input type="text" name="phone" id="si3" maxlength="10ch" minlength="10" required>
+            <br>
+            <label for="si4">Age</label>
+            <br>
+            <input type="number" name="age" id="si4" required>
+            <br>
+            
+            <div id="lan">
+                Language
+            <br><label for="si5">English</label>
+            <input type="radio" name="sub" id="si5" value="English">
+            <br><label for="si6">Kannada</label>
+            <input type="radio" name="sub" id="si6" value="Kannada">
+            <br> <label for="si7">Hindi</label>
+            <input type="radio" name="sub" id="si7" value="hindi">
+        </div>
+            <br>
+            <div class="end">
+                <input type="submit" value="Submit" onclick="next();">
+                <input type="reset" value="Reset">
+            </div>
+            
+        </div>
+    </div>
+</form>
+
+    <script>
+        
+     function next()
+     {
+        const name = document.getElementById('si1');
+        const age = document.getElementById('si4');
+        const a = name.value;
+        const e=parseInt(age.value);
+        
+    const email = document.getElementById('si2');
+    const phone = document.getElementById('si3');
+    
+    
+     
+        alert('Welcome '+a+' Lets start new lessons!');
+        if(e<=12 && e>3)
+        {
+            window.open("child.html");
+        }
+       else if(e>=13 && e<=18)
+       {
+        window.open("teen.html");
+       }
+       else{
+        window.open("adult.html");
+       }
+
+        
+     }
+
+     
+
+
+    </script>
+</body>
+</html>
